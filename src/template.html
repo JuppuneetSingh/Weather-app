@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <header>
+            <h1>Weather App</h1>
+
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter a city..."
+                    required
+                >
+                <button type="submit">Search</button>
+            </form>
+            <div id="temperature-toggle">
+      <button id="celsius-btn" type="button">°C</button>
+       <button id="fahrenheit-btn" type="button">°F</button>
+      </div> 
+        </header>
+
+        
+
+        <main id="weather-container">
+            <p id="message">Search for a city to see its weather.</p>
+        </main>
+    </div>
 </body>
 </html>
